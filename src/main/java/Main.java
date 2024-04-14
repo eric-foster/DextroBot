@@ -19,6 +19,7 @@ public class Main {
         JDA jda = JDABuilder.createDefault(TOKEN.getTOKEN())
                 .disableCache(CacheFlag.VOICE_STATE, CacheFlag.EMOJI, CacheFlag.STICKER)
                 .enableIntents(GatewayIntent.GUILD_MEMBERS)
+                .enableIntents(GatewayIntent.MESSAGE_CONTENT)
                 .setMemberCachePolicy(MemberCachePolicy.ALL)
                 .setStatus(OnlineStatus.ONLINE)
                 .setActivity(Activity.customStatus("Assisting the Management Team."))

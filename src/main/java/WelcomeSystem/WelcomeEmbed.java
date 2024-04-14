@@ -2,6 +2,7 @@ package WelcomeSystem;
 
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.Member;
+import net.dv8tion.jda.api.entities.Role;
 import net.dv8tion.jda.api.events.guild.member.GuildMemberJoinEvent;
 
 import java.awt.*;
@@ -11,7 +12,10 @@ public class WelcomeEmbed {
     public static void execute(GuildMemberJoinEvent event) {
         System.out.println("execute embed event = " + event);
         Member member = event.getMember();
+        Role getRole = event.getGuild().getRoleById(1221830842561593396L);
         Member bot = event.getGuild().getMemberById( "1223111199709728838");
+
+        event.getGuild().addRoleToMember(event.getGuild().getMember(member), getRole).queue();
 
         EmbedBuilder embedBuilder = new EmbedBuilder();
 

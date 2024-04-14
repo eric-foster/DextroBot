@@ -1,6 +1,5 @@
 package TicketSystem.util;
 
-import net.dv8tion.jda.api.entities.emoji.Emoji;
 import net.dv8tion.jda.api.interactions.components.buttons.Button;
 
 public class ButtonUtil {
