@@ -4,7 +4,7 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 src/main/java/Token/
-TicketSystem/transcripts/
+src/main/java/TicketSystem/transcripts
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
