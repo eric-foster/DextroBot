@@ -15,7 +15,6 @@ import net.dv8tion.jda.api.utils.cache.CacheFlag;
 
 public class Main {
     public static void main(String[] args) {
-        //test
         Token TOKEN = new Token();
         JDA jda = JDABuilder.createDefault(TOKEN.getTOKEN())
                 .disableCache(CacheFlag.VOICE_STATE, CacheFlag.EMOJI, CacheFlag.STICKER)
