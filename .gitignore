@@ -3,7 +3,7 @@ build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
-src/main/java/Token/*
+src/main/java/Token/Token.java
 src/main/java/TicketSystem/transcripts/*.txt
 
 ### IntelliJ IDEA ###
