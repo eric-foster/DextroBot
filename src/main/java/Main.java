@@ -35,5 +35,6 @@ public class Main {
                 Commands.slash("ping", "You say ping, I say pong!!!"),
                 Commands.slash("help", "A Help Panel for your convenience.")
         ).queue();
+        // do something
     }
 }
